@@ -1,0 +1,40 @@
+@keyframes slideBackAndForth{
+    0% {left: 0%;}
+    50% {left: 90%;}
+    100% {left: 0%;}
+}
+
+.sliding_pete {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 0;
+    background-image: url(purduepeteanvil.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: slideBackAndForth;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0%   {background-color:#cfb991; left:10%; top:10%;}
+    25%  {background-color:#000000; left:20%; top:25px;}
+    50%  {background-color:#cfb991; left:60%; top:250px;}
+    75%  {background-color:#000000; left:80%; top:100px;}
+    100% {background-color:#cfb991; left:0px; top:0px;}
+}
+
+.moving_pete {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 200px;
+    background-image: url(pete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
